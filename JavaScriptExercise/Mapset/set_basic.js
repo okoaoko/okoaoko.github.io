@@ -1,0 +1,11 @@
+let set = new Set();
+set.add(1);
+set.add(2);
+set.add(4);
+set.add(7);
+set.delete(1);
+console.log(set);
+console.log("size"+set.size);
+console.log('type : ' + typeof set);
+set.clear();
+console.log(set);

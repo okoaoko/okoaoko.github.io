@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 強制轉換 */
+        var a = 123;
+
+        a = a.toString();
+
+        console.log(typeof a);
+        console.log(a);
+
+        /* 使用String()函數作強制轉換
+        實際上就是用tostring的方法
+        但可以用在null 和 undefiend */
+
+
+        var b = null
+        b = String(b)
+        console.log(typeof b)
+    </script>
+</body>
+</html>

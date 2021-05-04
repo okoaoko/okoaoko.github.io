@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link href="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<style>
+    .container {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .container-fluid img {
+        padding: 10px;
+        width: 80px;
+
+    }
+
+    .navbar-brand {
+        font-size: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 13px;
+    }
+
+    .owl-carousel .item-1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .middle-title {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        width: 320px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .titleend {
+
+        display: flex;
+        position: absolute;
+        bottom: 150px;
+
+    }
+
+    .opclass {
+
+        background-color: rgba(57, 101, 196, 0.8);
+        color: white;
+        padding: 10px 20px 10px;
+        display: flex;
+        margin: 0 100px 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black-50">
+            <div class="container-fluid">
+                <img src="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/sp/333.webp" alt="">
+                <a class="navbar-brand" href="#">
+                    <h1>Build School</h1>
+                    <p>developer career builder</p>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">台北班簡介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">新竹班簡介</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">校友會-台灣青築未來協會 Build the Future</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">歷屆老師</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">問題洽詢</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item-1">
+            <h4>
+                <img src="https://picsum.photos/id/551/1425/710" alt="">
+            </h4>
+
+            <p class="middle-title">軟體工程師的路上有人帶</p>
+
+            <div class="titleend">
+                <div class="opclass">台北班簡介及報名</div>
+                <div class="opclass">新竹班簡介</div>
+                <div class="opclass">招生說明會報名</div>
+            </div>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/552/1425/710" alt="">
+            </h4>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/553/1425/710" alt="">
+            </h4>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/554/1425/710" alt="">
+            </h4>
+        </div>
+
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/556/1425/710" alt="">
+            </h4>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/557/1425/710" alt="">
+            </h4>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/558/1425/710" alt="">
+            </h4>
+        </div>
+        <div class="item">
+            <h4>
+                <img src="https://picsum.photos/id/559/1425/710" alt="">
+            </h4>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <i class="far fa-address-card"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Build School</h5>
+                    <p class="card-text">Build = 將程式碼編譯及建置成可執行的軟體
+                    </p>
+                    <p class="card-text">Build = 動手做
+
+                    </p>
+                    <p class="card-text">Build = 軟體開發職涯的打造者
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">實作及就業導向的軟體開發學校</h5>
+                    <p class="card-text">因應數位新時代的來臨，軟體、App、IoT
+                        、SaaS、雲端平台的應用需求大爆炸，軟體工程師的招募需求持續上升，以2016年5月求職平台的統計資料，從高科技、電商、金融、傳產、網路服務、軟體資訊、新創等各行業，台灣至少有 27,000
+                        位軟體開發工程師的職缺，甚至日本、新加坡等軟體及App 外商也來台灣求才。
+
+                        ​
+
+                        為了彌補企業求才所需技能及實務教學上的落差，我們希望能幫助想搭上軟體開發及數位經濟這艘火箭的學員們，打造更有競爭力的職涯!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <i class="fab fa-accessible-icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">動手實作才是真學習</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">打造專案作品的學習方式
+
+                        (Project-based Learning)</h5>
+                    <p class="card-text">
+                        透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
+                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <i class="fas fa-address-book"></i>
+                <div class="card-body">
+                    <h5 class="card-title">就業銜接</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">真正企業職場所需技能
+
+                        (Career Readiness)</h5>
+                    <p class="card-text">除了透過打造專題作品過程，學到了技術及硬技能外，不同於一般的軟體培訓，我們更加入了簡報技巧、履歷及面試準備、以及真正軟體開發的團隊溝通及運作，這些軟實力
+                        (Soft-Skill) 的培養，讓學員能提早做好準備，在職場上成為一位專業的軟體工程師!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">企業導師的連結
+
+                        (Mentor Network)</h5>
+                    <p class="card-text">每一位在軟體開發上有實務經驗的企業導師，他們是各大企業的主管、資深軟體工程師或
+                        CTO，其人際連結及資源將帶給同學更多更好的就業機會，你將比別人站得更高，看得更遠!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <i class="fab fa-airbnb"></i>
+                <div class="card-body">
+                    <h5 class="card-title">連結及影響力</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/OwlCarousel/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="./BuildSchool GitHub Repository/FrontEnd-BuildSchool/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            margin: 8,
+            autoHeight: true
+        });
+    </script>
+</body>
+
+</html>

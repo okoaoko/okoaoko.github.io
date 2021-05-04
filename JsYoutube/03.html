@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 可以將js代碼編寫到onclick屬性中 -->
+    <button onclick="alert('被點')">點我一下</button>
+
+    <script>
+        /* 可以將代碼寫到script標籤 */
+        alert("222")
+    </script>
+
+    <!-- 可以將js代碼編寫到外部文件
+    寫到外部文件,可以利於瀏覽器的緩存機制 -->
+    <!-- 但一旦引入外部文件就不能再編寫代碼了 -->
+    <!-- 如果需要可再創一個script -->
+    <script src="../JsYoutube/03.js">
+        /* 下面的alert會被無視 */
+        alert("333")
+    </script>
+    <script>
+        alert("我是內部")
+    </script>
+</body>
+
+</html>

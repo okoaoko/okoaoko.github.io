@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .top {
+            height: 146px;
+        }
+
+        .col-2 button {
+            font-size: 40px;
+            padding: 10px;
+            background-color: rgb(216, 208, 208);
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .pic {
+            /* background-color: rgb(134, 103, 192); */
+            width: auto;
+            height: 700px;
+        }
+
+        .col-5 {
+            /* background-color: cornflowerblue; */
+            width: auto;
+            height: 700px;
+        }
+
+        .imges {
+            /* background-color: rgb(94, 28, 19); */
+            width: 100px;
+            height: 550px;
+        }
+
+
+        .m-4 {
+            font-size: 35px;
+        }
+
+        .look {
+            font-size: 15px;
+        }
+
+        .color {
+            /* background-color: rgb(213, 216, 19); */
+            width: auto;
+            height: 102px;
+        }
+
+        
+
+        .p {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 按鈕區 -->
+    <div class="top row justify-content-center">
+        <div class="col-2 text-center">
+            <button id="btn1">ipad</button>
+        </div>
+        <div class="col-2 text-center">
+            <button id="btn2">iphone</button>
+        </div>
+    </div>
+    <!-- 商品區 -->
+    <div class="down container row justify-content-center">
+        <div class="pic col-6 justify-content-center ">
+
+            <div class=" w-100">
+                <img class="imge w-100" src="../img/all.jpeg" alt="">
+            </div>
+
+            <dir class="left_three row">
+                <div class="color col-4"></div>
+                <div class="color col-4"></div>
+                <div class="color col-4"></div>
+            </dir>
+
+        </div>
+        <!-- <div class="col-1 justify-content-center">
+
+        </div> -->
+        <div class="col-5 justify-content-center">
+            <div class="buy-top">
+                <h2 class="buy_title m-4">購買 iPad Air</h2>
+                <h3 class="look m-4">外觀</h3>
+            </div>
+            <!-- 六種顏色選擇 -->
+            <div class="buy_chose row">
+
+                <button id="btns1" class="color col-6">
+                    <img alt=""
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903?wid=102&amp;amp;hei=102&amp;amp;fmt=png-alpha&amp;amp;.v=1552422652805"
+                        class="form-selector-swatch" style="width:35px">
+                    <p class="p">銀色</p>
+                </button>
+                <button id="btns2" class="color col-6">
+                    <img alt=""
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-blue-202009?wid=102&amp;amp;hei=102&amp;amp;fmt=png-alpha&amp;amp;.v=1599240136000"
+                        class="form-selector-swatch" style="width:35px">
+                    <p class="p">藍色</p>
+                </button>
+                <button id="btns3" class="color col-6">
+                    <img alt=""
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-gold-202009?wid=102&amp;amp;hei=102&amp;amp;fmt=jpeg&amp;amp;qlt=95&amp;amp;.v=1599240136000"
+                        class="form-selector-swatch" style="width:35px">
+                    <p class="p">粉色</p>
+                </button>
+                <button id="btns4" class="color col-6">
+                    <img alt=""
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-green-202009?wid=102&amp;amp;hei=102&amp;amp;fmt=jpeg&amp;amp;qlt=95&amp;amp;.v=1599240136000"
+                        class="form-selector-swatch" style="width:35px">
+                    <p class="p">綠色</p>
+                </button>
+                <button id="btns5" class="color col-6">
+                    <img alt=""
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903?wid=102&amp;amp;hei=102&amp;amp;fmt=png-alpha&amp;amp;.v=1552422652805"
+                        class="form-selector-swatch" style="width:35px">
+                    <p class="p">黑色</p>
+                </button>
+
+
+
+            </div>
+            <div class="buy_sv row">
+                <h3 class="look m-4">儲存裝置</h3>
+            </div>
+            <!-- 儲存空間 -->
+            <div class="buy_save row">
+                <button id="btns7" class="color col-6">
+                    64G
+                </button>
+                <button id="btns8" class="color col-6">
+                    256G
+                </button>
+            </div>
+            <!-- 選擇價格 -->
+            <div class="buy_show">
+                <div class="show color col-6">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+        <script>
+            let btn1 = document.getElementById("btn1");
+            let btns1 = document.getElementById("btns1");
+            let btns2 = document.getElementById("btns2");
+            let btns3 = document.getElementById("btns3");
+            let btns4 = document.getElementById("btns4");
+            let btns5 = document.getElementById("btns5");
+            let btns6 = document.getElementById("btns6");
+            let btns7 = document.getElementById("btns7");
+            let btns8 = document.getElementById("btns8");
+            let imge = document.querySelector(".imge")
+            let show = document.querySelector(".show")
+            console.log(show);
+            btn1.addEventListener('click', function () {
+                btn1.style.background = 'white'
+                btn1.style.borderColor = 'black'
+                btn2.style.background = ''
+                btn2.style.borderColor = ''
+                imge.src = "../img/all.jpeg"
+                btns1.addEventListener('click', function () {
+                    imge.src = "../img/1.png"
+                })
+                btns2.addEventListener('click', function () {
+                    imge.src = "../img/2.png"
+                })
+                btns3.addEventListener('click', function () {
+                    imge.src = "../img/3.png"
+                })
+                btns4.addEventListener('click', function () {
+                    imge.src = "../img/4.png"
+                })
+                btns5.addEventListener('click', function () {
+                    imge.src = "../img/5.png"
+                })
+                btns7.addEventListener('click', function () {
+                    show.innerText = 'NT.18900';
+                })
+                btns8.addEventListener('click', function () {
+                    show.innerText = 'NT.23900';
+                })
+
+
+
+            })
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener('click', function () {
+                btn2.style.background = 'white'
+                btn2.style.borderColor = 'black'
+                btn1.style.background = ''
+                btn1.style.borderColor = ''
+            })
+
+        </script>
+</body>
+
+</html>

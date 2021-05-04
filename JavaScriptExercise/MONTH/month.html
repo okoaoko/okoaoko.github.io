@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+        <script>
+            //判斷當前年份是否是閏年(閏年2月份有29天，平年2月份只有28天)
+            function isLeap(year) {
+            return year % 4 == 0 ? (year % 100 != 0 ? 1 : (year % 400 == 0 ? 1 : 0)) : 0;
+            }
+            var i, k,
+            today = new Date(),                 //獲取當前日期
+            y = today.getFullYear(),              //獲取日期中的年份
+            m = today.getMonth(),                //獲取日期中的月份(需要注意的是：月份是從0開始計算，獲取的值比正常月份的值少1)
+            d = today.getDate(),                //獲取日期中的日(方便在建立日期表格時高亮顯示當天)
+            firstday = new Date(y, m, 1),            //獲取當月的第一天
+            dayOfWeek = firstday.getDay(),           //判斷第一天是星期幾(返回[0-6]中的一個，0代表星期天，1代表星期一，以此類推)
+            days_per_month = new Array(31, 28   isLeap(y), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31),         //建立月份陣列
+            str_nums = Math.ceil((dayOfWeek   days_per_month[m]) / 7);                        //確定日期表格所需的行數
+            document.write("<table cellspacing='0'><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr>"); //列印表格第一行(顯示星期)
+            for (i = 0; i < str_nums; i  = 1) {         //二維陣列建立日期表格
+            document.write('<tr>');
+            for (k = 0; k < 7; k  ) {
+            var idx = 7 * i   k;                //為每個表格建立索引,從0開始
+            var date = idx - dayOfWeek   1;          //將當月的1號與星期進行匹配
+            (date <= 0 || date > days_per_month[m]) ? date = ' ': date = idx - dayOfWeek   1;  //索引小於等於0或者大於月份最大值就用空表格代替
+            date == d ? document.write('<td class="today">'   date   '</td>') : document.write('<td>'   date   '</td>');  //高亮顯示當天
+            }
+            document.write('</tr>');
+            }
+            document.write('</table>');
+            </script>
+</body>
+
+</html>

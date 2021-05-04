@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        
+        /* let h1 = document.createElement("h1");
+        h1.innerHTML="DOM";
+        document.body.prepend(h1);
+
+
+        let div = document.createElement("div");
+
+        let p1 = document.createElement("p");
+        p1.innerText="2222";        
+        div.appendChild(p1);          
+        document.body.prepend(div);
+
+
+
+        let ul = document.createElement("ul");
+        
+        let li = document.createElement("li");
+        li.innerHTML="hi";
+
+        ul.appendChild(li);       
+        document.body.prepend(ul); */
+
+let lis = ["windows","document","html"];
+let ul = genUl(lis);
+document.body.appendChild(ul);
+
+function genUl(liArray){
+
+    let ul = document.createElement("ul");
+
+    liArray.forEach((item,index)=>{
+        let li = document.createElement("li");
+        li.innerText = item;
+        ul.appendChild(li);
+    });
+return ul;
+
+}
+        
+export{$g,genUl};
+
+</script>
+</body>
+</html>

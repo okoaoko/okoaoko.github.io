@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        window.onload = requestJSON;
+
+
+        const url = "https://raw.githubusercontent.com/okoaoko/Json/main/json_array_object.json";
+        //let ul = document.getElementById('EmployeeList');
+        let pl = [];
+        let data = [];
+
+
+
+        let xhr = new XMLHttpRequest();
+
+
+        function requestJSON() {
+            xhr.onload = function () {
+                data = JSON.parse(this.responseText);
+
+                data.forEach((datacatch, index) => {
+                    let li = document.createElement('li');
+                    li.innerText = `${datacatch.firstname}`;
+                    pl.push(li.innerText);
+                    console.log(li);
+                    console.log(pl);
+
+                })
+                console.log(data);
+
+
+
+
+            }
+
+            xhr.open('GET', url);
+            xhr.send();
+
+        }
+    </script>
+</body>
+
+</html>

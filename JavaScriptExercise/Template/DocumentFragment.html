@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+
+
+    <script type="module">
+        import { $g, $c } from '../modules/helpers.js';
+
+
+        //Creat DocumentFragment
+        let fragment = new DocumentFragment();
+
+
+        //Creat<h1>
+        let h1 = $c('h1');
+        
+        //textContext 和 innertext（ie發明）是一樣意斯  
+        h1.textContent = "DocumentFragment";
+        
+        fragment.append(h1);
+        document.body.appendChild(fragment);
+
+        let productArray = ['iPhone', 'iPad', 'Mac', 'Watch'];
+        //Creat ul li
+
+        let ul = $c('ul');
+        productArray.forEach(item => {
+            let li = $c('li');
+            li.textContent = item;
+            ul.appendChild(li);
+        })
+
+        fragment.appendChild(ul);
+        document.body.appendChild(fragment);
+
+
+
+    </script>
+
+</body>
+
+</html>

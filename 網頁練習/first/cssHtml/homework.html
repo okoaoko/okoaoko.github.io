@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0 50px;
+            font-size: 20px;
+        }
+
+        .line {
+            width: 30px;
+            height: 5px;
+            margin: 0 0 60px;
+            background-color: black;
+        }
+
+
+
+        .allbutton {
+            display: flex;
+
+
+            width: 980px;
+        }
+
+        .button {
+            margin: 10px;
+            width: 176px;
+            height: 42px;
+            overflow: hidden;
+
+        }
+
+        .click-before {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(216, 212, 212);
+            position: relative;
+
+        }
+
+        .click {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(196, 33, 33);
+        }
+
+        .button:hover .click {
+            transition: 500ms;
+            transform: translateY(-37px);
+        }
+
+        /* 上半段動畫 */
+        .control {
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .precent {
+            width: 355px;
+            height: 388px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bigtitle {
+            height: 120px;
+            background-color: rgb(181, 31, 31);
+            font-size: 25px;
+            display: flex;
+
+        }
+
+        .text {
+            height: 250px;
+            background-color: black;
+
+        }
+
+        .textone {
+            font-size: 30px;
+        }
+
+        .shadowcol {
+            width: 439px;
+            height: 290px;
+            background-color: #f6f0f0;
+            margin: 20px 0 0;
+            position: relative;
+            z-index: -1;
+        }
+
+        .videolink {
+            width: 695px;
+            height: 430px;
+            background-color: rgb(44, 34, 94);
+            position: absolute;
+            display: flex;
+            top: 464px;
+            right: 330px;
+        }
+
+        .videolink img {
+            width: 695px;
+            height: 430px;
+        }
+
+        .newset {
+            width: 680px;
+
+            padding: px;
+            background-color: rgb(235, 230, 230);
+            position: absolute;
+            z-index: 1;
+            top: 860px;
+        }
+
+        .bigtitle p {
+            transform: rotate(90deg)
+        }
+
+        .settitle {
+            color: rgb(173, 38, 38);
+            margin: 20px 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .lines{
+flex-grow: 1;
+height: 5px;
+background-color: brown;
+            margin-left: 20px;
+        }
+
+        .setmain {
+            color: rgb(255, 255, 255);
+            background-color: black;
+            width: 125px;
+            border-radius: 4px;
+            margin: 3px 20px;
+            font-size: 20px;
+
+        }
+
+        .settxt {
+            color: rgb(193, 187, 187);
+            font-size: 16px;
+            margin: 5px 30px 10px;
+
+        }
+
+        /* .settxt::before {
+            content: "• "; d9
+            color: brown;
+
+        } */
+        .settxt p{
+            background-image:url('https://fakeimg.pl/4x4/f00');
+v    </style>
+</head>
+
+<body>
+    <div class="Title">
+        <h1>五大優勢</h1>
+        <div class="line"></div>
+
+        <div class="allbutton">
+            <div class="button">
+                <div class="click-before">操控樂趣</div>
+                <div class="click">操控樂趣</div>
+
+            </div>
+
+            <div class="button">
+                <div class="click-before">安全守規</div>
+                <div class="click">安全守規</div>
+
+            </div>
+
+            <div class="button">
+                <div class="click-before">乘坐舒適</div>
+                <div class="click">乘坐舒適</div>
+            </div>
+
+
+            <div class="button">
+                <div class="click-before">以人為本</div>
+                <div class="click">以人為本</div>
+
+            </div>
+
+            <div class="button">
+                <div class="click-before">引以為傲</div>
+                <div class="click">引以為傲</div>
+            </div>
+        </div>
+    </div>
+    <div class="control">
+        <div class="precent">
+            <div class="bigtitle">
+                <p class="one">01</p>
+                <h2>操控樂趣</h2>
+            </div>
+            <div class="text">
+                <div class="textone">
+                    人人滿意的駕駛體驗
+                </div>
+                <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身坪五，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+                </p>
+            </div>
+        </div>
+
+        <div class="shadowcol"></div>
+
+        <div class="videolink">
+            <img src="/img/car.jpeg"">
+        </div>
+        <div class=" newset">
+            <div class="settitle">
+                <span>
+                    因為我們做了這些革新
+                </span>
+                <span class="lines"></span>
+            </div>
+            <h3 class="setmain">低重心設計</h3>
+            <div class="settxt">
+                <p></p>
+                透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。
+            </div>
+            <h3 class="setmain">車體剛性強化</h3>
+            <div class="settxt">
+                車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗紐剛性，強化駕馭穩定性及安全性。
+            </div>
+            <h3 class="setmain">四輪獨立懸吊</h3>
+            <div class="settxt">
+                搭載全新四輪獨立懸吊設定，透過懸吊的高盛在強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*將類型轉換成number
+        使用Number()函數
+
+        如果是純數字,則直接轉換成數字
+        如果有非數字,則轉為NaN
+
+        bool -> true 1 false 0
+
+       */
+      let a ="123";
+      a = Number(a);
+      console.log(typeof a)
+      console.log(a)
+      /*
+      
+      轉換方式2
+      -這種方式專門對付字串
+      parseInt(b)
+      parseFloat(b) ->類似Int但她可以有效獲得小數
+      */
+     b = "123px";
+     b = parseInt(b);
+     console.log(b)
+
+    c = true;
+    c = parseInt(c)
+    console.log(c);
+    console.log(typeof c);
+</script>
+    </body>
+
+</html>

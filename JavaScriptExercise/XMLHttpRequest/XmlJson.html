@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>用XMLHttpRequest請求GitHub JSON資料</h1>
+    <button id='button1'>Request JSON1</button>
+    <button id='btnClear'>Clear</button>
+
+    <ul id="EmployeeList"></ul>
+
+
+
+    <script type="module">
+        import { $g } from "../modules/helpers.js"
+
+        let msg = $g('#EmployeeList');
+
+        $g('button').forEach((item) => {
+            item.addEventListener('click', () => { msg.innerText = ''; })
+        });
+
+        //let btn1 = $g('#button1').addEventListener('click', requestJSON);
+        $g('#btnClear').addEventListener('click', () => { msg.innerText = ''; })
+
+
+
+        //let ul = document.getElementById("EmployeeList");
+
+        const url = "https://raw.githubusercontent.com/okoaoko/Json/main/json_array_object.json";
+        let ul = document.getElementById('EmployeeList');
+        let employees = [];
+        let xhr = new XMLHttpRequest();
+
+
+ 
+
+        window.onload=function requestJSON() {
+            xhr.onload = function () {
+                employees = JSON.parse(this.responseText);
+
+                employees.forEach((emplo, index) => {
+                    let li = document.createElement('li');
+                    li.innerText = `${emplo.firstname}`;
+                    ul.appendChild(li);
+                    console.log(li);
+                })
+                console.log(employees);
+                
+                
+            }
+            xhr.open('GET',url);
+            xhr.send();
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

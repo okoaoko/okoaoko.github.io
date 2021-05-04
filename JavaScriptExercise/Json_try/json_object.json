@@ -1,0 +1,20 @@
+{
+    "firstname":"Kevin",
+    "height":180,
+    "email":"kenin180@gmial.com",
+
+"city":{"通訊地址":"台北",
+        "戶籍地址":"桃園"
+    
+    },
+
+
+
+
+"phone":{
+    "市話":"02-09990909",
+    "行動電話":"99090909090"
+},
+
+"cars":["BMW","Nisson","Audi"]
+}

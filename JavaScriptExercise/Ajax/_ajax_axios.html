@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- AXIOX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script>
+        /* $.ajax({
+            url: 'https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json',
+            method: 'get',
+            dataType: 'json',
+            success: function (res) {
+                //成功
+                console.log(res);
+            },
+            error: function (err) {
+                //失敗
+                console.log(err);
+                alert('error')
+            }
+        })
+
+        axios.get('https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json')
+            .then(function (res) {
+                //console.log(res);
+                console.table(res.data);
+            })
+            .catch(function (err) {
+                console.log(err);
+            }) */
+        Promise.all([getArea(), getArea2()])
+            .then((res) => {
+                let [res1, res2] = res;
+                console.log(res1);
+                console.log(res2);
+                console.log('地圖資料 用水量都有了 開始畫地圖');
+            })
+
+
+        function getArea() {
+            return new Promise((resolve, reject) => {
+                $.ajax({
+                    url: 'https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json',
+                    method: 'get',
+                    dataType: 'json',
+                    success(res) {
+                        resolve(res)
+                    },err(err){
+                        reject(err)
+                    }
+
+
+                })
+            })
+        }
+        function getArea2() {
+            return new Promise((resolve, reject) => {
+                $.ajax({
+                    url: 'https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json',
+                    method: 'get',
+                    dataType: 'json',
+                    success(res) {
+                        resolve(res)
+                    },err(err){
+                        reject(err)
+                    }
+
+
+                })
+            })
+        }
+
+        function axiosGetArea(){
+            
+        }
+    </script>
+</body>
+
+</html>

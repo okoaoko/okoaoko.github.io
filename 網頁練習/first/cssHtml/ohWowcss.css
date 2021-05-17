@@ -1,0 +1,14 @@
+
+.row{
+   
+    margin: auto;
+}
+.payment_profile{
+    
+
+    background-color: crimson;
+}
+.payment_order{
+    height: 100px;
+    background-color: darkcyan;
+}

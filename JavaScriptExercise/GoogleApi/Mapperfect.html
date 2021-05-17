@@ -20,18 +20,21 @@
         }
     </style>
     <script>
-        window.onload = requestJSON;
+
 
 
         const url = "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json";
         //let ul = document.getElementById('EmployeeList');
+        const url2 = "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%87%AA%E4%BE%86%E6%B0%B4%E7%94%A8%E9%87%8F.json";
 
         let data = [];
         let box = [];
         let i;
         let objJsonArray;
         let xhr = new XMLHttpRequest();
-// window.onload =requestJSON(),initMap();
+        
+
+        // window.onload =requestJSON(),initMap();
 
         function requestJSON() {
             xhr.onload = function () {
@@ -40,7 +43,7 @@
                 data.forEach((datacatch, index) => {
 
                     let position = [];
-                   //轉成物件加數字,才能被map讀取
+                    //轉成物件加數字,才能被map讀取
                     let i = (` {"lat": ${datacatch.Lat} , "lng": ${datacatch.Lng}}`);
                     //這是轉成純物件的寫法
                     //let i = (` {"lat": "${datacatch.Lat}" , "lng": "${datacatch.Lng}"}`);
@@ -59,21 +62,22 @@
             xhr.send();
         }
 
-      
+        
+
 
 
 
         function initMap() {
             requestJSON();
             const myLatLng = { lat: 25.0324039, lng: 121.519882 };
-            
+
             const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 8,
                 center: myLatLng,
             });
-//把box陣列內容foreach出來標記點
+            //把box陣列內容foreach出來標記點
             box.forEach((item, index) => {
-                
+
                 new google.maps.Marker({
                     position: item,
                     map,

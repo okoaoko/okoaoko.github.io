@@ -19,50 +19,51 @@
             <div class="payment_profile col-12 col-md-6">
                 <h2 class="section-title">付款</h2>
                 <h3 class="section-subtitle">
-                      <span class="subsection">您的詳細資料</span>
-                      <span class="subsection">
+                    <span class="subsection">您的詳細資料</span>
+                    <span class="subsection">
                         <span class="required-field">*</span>
                         表示必填欄位</span>
                 </h3>
                 <div class="input">
                     <div class="input-wrapper">
-                        <div class="intput-detail">
-                            <label for="Address">
+                        <div class="intput-detailtop">
+                            <div class="Address">
                                 <span>*</span>
                                 <span>地址</span>
-                            </label>
+                            </div>
                             <input type="text">
                         </div>
                     </div>
                     <div class="input-wrapper">
-                        <div class="intput-detail">
-                            <label for="City">
+                        <div class="intput-detailtop">
+                            <div class="City">
                                 <span>*</span>
                                 <span>城市</span>
-                            </label>
+                            </div>
                             <input type="text">
                         </div>
                     </div>
                     <div class="input-wrapper">
-                        <div class="intput-detail">
-                            <label for="Country">
+                        <div class="intput-detailtop">
+                            <div class="Country">
                                 <span>*</span>
                                 <span>國家/地區</span>
-                            </label>
+                            </div>
                             <select name="國家/地區" id="Country"></select>
                         </div>
                     </div>
                     <div class="input-wrapper">
-                        <div class="intput-detail">
-                            <label for="Zip">
+                        <div class="intput-detailtop">
+                            <div class="Zip">
                                 <span>*</span>
                                 <span>郵遞區號</span>
-                            </label>
+                            </div>
                             <input type="text">
                         </div>
                     </div>
                 </div>
                 <h3 class="section-subtitle">喜好的付款方式。</h3>
+
                 <div class="promotion">
                     <h3>促銷代碼</h3>
                     <button class="primary-link">新增促銷代碼</button>
@@ -83,36 +84,58 @@
                         </li>
                     </ul>
                     <div class="input-wrapper">
-                        <div class="intput-detail">
-                            <label for="cardname">
+                        <div class="intput-detailtop">
+                            <div class="cardname">
                                 <span>信用卡上的姓名 *</span>
-                            </label>
+                            </div>
                             <input type="text">
                         </div>
                         <div class="intput-detail">
-                            <label for="cardnumber">
-                                <span>信用卡號碼</span>
-                            </label>
-                            <input type="text">
-                            <label for="safenumber">
-                                <span>安全碼</span>
-                            </label>
-                            <input type="text">
+                            <div class="cardnumbers">
+                                <label for="cardnumber">
+                                    <span>信用卡號碼</span>
+                                </label>
+                                <input type="text">
+                            </div>
+                            <div class="cardnumbers">
+                                <label for="safenumber">
+                                    <span>安全碼</span>
+                                </label>
+                                <input type="text">
+                            </div>
                         </div>
-                        <div class="month-year">
-                            
+                        <div class="time">
+                            <span>到期日 *</span>
                         </div>
-                        <div class="month-year">
-                            <span>/</span>
+                        <div class="untime">
+                            <div class="month-year">
+                                <div class="untimetext">
+                                    <span>月</span>
+                                </div>
+                                <select name="month-year" id="month"></select>
+                            </div>
+                            <div class="month-year">
+                                <span>/</span>
+                            </div>
+                            <div class="month-year">
+                                <div class="untimetext">
+                                    <span>年</span>
+                                </div>
+                                <select name="month-year" id="year"></select>
+                            </div>
                         </div>
-                        <div class="month-year"></div>
+                        <div class="save">
+                            <button class="savebtn">
+                                儲存並繼續
+                            </button>
+                        </div>
                     </div>
                 </div>
 
 
 
             </div>
-            
+
             <div class="payment_order col-12 col-md-6">
 
             </div>

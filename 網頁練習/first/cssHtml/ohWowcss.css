@@ -12,3 +12,17 @@
     height: 100px;
     background-color: darkcyan;
 }
+.month-year{
+    display: inline-block;
+}
+
+.promotion{
+    display: flex;
+}
+.card-type{
+    display: flex;
+}
+.intput-detail{
+    display: flex;
+    
+}

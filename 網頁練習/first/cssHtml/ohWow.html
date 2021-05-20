@@ -32,8 +32,9 @@
                                 <span>*</span>
                                 <span>地址</span>
                             </div>
-                            <input type="text">
+
                         </div>
+                        <input class="text" type="text">
                     </div>
                     <div class="input-wrapper">
                         <div class="intput-detailtop">
@@ -41,8 +42,9 @@
                                 <span>*</span>
                                 <span>城市</span>
                             </div>
-                            <input type="text">
+
                         </div>
+                        <input class="text" type="text">
                     </div>
                     <div class="input-wrapper">
                         <div class="intput-detailtop">
@@ -50,6 +52,9 @@
                                 <span>*</span>
                                 <span>國家/地區</span>
                             </div>
+
+                        </div>
+                        <div class="country-select">
                             <select name="國家/地區" id="Country"></select>
                         </div>
                     </div>
@@ -59,8 +64,9 @@
                                 <span>*</span>
                                 <span>郵遞區號</span>
                             </div>
-                            <input type="text">
+
                         </div>
+                        <input class="text" type="text">
                     </div>
                 </div>
                 <h3 class="section-subtitle">喜好的付款方式。</h3>
@@ -71,39 +77,60 @@
                 </div>
 
                 <div class="enter-card">
-                    <i class="far fa-circle"></i>
-                    <span class="lable">信用卡/Visa金融卡</span>
-                    <ul class="card-type">
-                        <li class="card-type-visa">
-                            <i class="fab fa-cc-visa"></i>
-                        </li>
-                        <li class="card-type-jcb">
-                            <i class="fab fa-cc-jcb"></i>
-                        </li>
-                        <li class="card-type-master">
-                            <i class="fab fa-cc-mastercard"></i>
-                        </li>
-                    </ul>
+                    <div class="icards">
+                        <div class="icard">
+                            <i class="far fa-circle"></i>
+                            <span class="lable">信用卡/Visa金融卡</span>
+                        </div>
+                    </div>
+
+                    <div class="icards">
+                        <div class="icard">
+                            <ul class="card-type">
+                                <li class="card-type-visa">
+                                    <i class="fab fa-cc-visa"></i>
+                                </li>
+                                <li class="card-type-jcb">
+                                    <i class="fab fa-cc-jcb"></i>
+                                </li>
+                                <li class="card-type-master">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="icards">
+                        <div class="icard">
+
+                        </div>
+                    </div>
+
                     <div class="input-wrapper">
                         <div class="intput-detailtop">
                             <div class="cardname">
                                 <span>信用卡上的姓名 *</span>
                             </div>
-                            <input type="text">
+                            <input class="name" type="text">
                         </div>
                         <div class="intput-detail">
-                            <div class="cardnumbersf">
-                                <label for="cardnumber">
+                            <div class="cardnumberaaa">
+
+                                <div class="cardnumber">
                                     <span>信用卡號碼</span>
-                                </label>
-                                <input class="" type="text">
+                                </div>
+                                <input class="number" type="text">
+
                             </div>
-                            <div class="cardnumberss">
-                                <label for="safenumber">
+                            <div class="cardnumberbbb">
+
+                                <div class="safenumber">
                                     <span>安全碼</span>
-                                </label>
-                                <input type="text">
+                                </div>
+                                <input class="safe" type="text">
+
                             </div>
+
                         </div>
                         <div class="time">
                             <span>到期日 *</span>
@@ -125,12 +152,14 @@
                                 <select name="month-year" id="year"></select>
                             </div>
                         </div>
-                        <div class="save">
-                            <button class="savebtn">
-                                儲存並繼續
-                            </button>
-                        </div>
+
                     </div>
+
+                </div>
+                <div class="save">
+                    <button class="savebtn">
+                        儲存並繼續
+                    </button>
                 </div>
 
 

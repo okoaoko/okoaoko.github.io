@@ -1,12 +1,15 @@
-
+body{
+    background-color: rgb(238, 238, 238);
+    
+}
 .row{
-   
     margin: auto;
 }
 .payment_profile{
     
+   
 
-    background-color: crimson;
+    
 }
 .payment_order{
     
@@ -26,12 +29,7 @@
     display: flex;
     
 }
-.cardnumbersf{
-   width: 70%;
-}
-.cardnumberss{
-    width: 30%;
-}
+
 .remind{
     display: flex;
     background-color: cornflowerblue;
@@ -43,7 +41,7 @@
 .books{
     border-bottom: solid;
     border-width: 2px;
-    border-color: rgb(37, 37, 44);
+    border-color: rgb(18, 156, 110);
 
     display: flex;
 }
@@ -60,3 +58,98 @@
     display: flex;
 }
 
+/* 樣式 */
+.section-title{
+    margin: 25px 0 25px;
+    padding: 10px 0 10px;
+    font-size: 19px;
+}
+.section-subtitle{
+    padding: 0 0 21px;
+}
+.intput-detailtop{
+    
+    margin: 0 0 14px;
+    font-size: 14px;
+}
+.text{
+    width: 100%;
+    margin: 0 0 21px;
+    padding: 0 0 17px;
+}
+.country-select{
+    width: 100%;
+    margin: 0 0 21px;
+    padding: 0 0 17px;
+}
+.enter-card{
+    background-color: white;
+    padding: 19px;
+}
+.name{
+    width: 100%;
+    margin: 0 0 21px;
+    padding: 0 0 17px;
+}
+.promotion{
+    padding: 12px;
+    background-color: white;
+    margin: 0 0 21px;
+}
+.promotion h3{
+    margin: 3px 20px 0;
+}
+
+.cardnumberaaa{
+    
+    
+    margin-right: 15px;
+    width: 70%;
+}
+.cardnumberbbb{
+    width: 30%;
+}
+.cardnumber{
+    padding: 0 0 17px;
+}
+.safenumber{
+    padding: 0 0 17px;
+}
+.number{
+    margin: 0 0 21px;
+    padding: 0 0 17px;
+    width: 100%;
+}
+.safe{
+    margin: 0 0 21px;
+    padding: 0 0 17px;
+    width: 100%;
+}
+.icard{
+    margin: 0 0 14px;
+}
+li{
+    width: 6%;
+}
+.cardname{
+    margin: 0 0 14px;
+}
+.time{
+    margin: 0 0 14px;
+}
+.untime{
+    margin: 0 0 14px;
+
+}
+.untimetext{
+    margin: 0 0 14px;
+}
+.save{
+    padding:19px 0 ;
+}
+.savebtn{
+    background-color: rgb(226, 15, 15);
+    padding: 7px 80px ;
+    color: white;
+    border: none;
+}

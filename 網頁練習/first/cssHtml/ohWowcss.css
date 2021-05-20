@@ -5,16 +5,8 @@ body{
 .row{
     margin: auto;
 }
-.payment_profile{
-    
-   
 
-    
-}
-.payment_order{
-    
-    background-color: darkcyan;
-}
+
 .month-year{
     display: inline-block;
 }
@@ -32,16 +24,26 @@ body{
 
 .remind{
     display: flex;
-    background-color: cornflowerblue;
-    border-width: 2px;
+    background-color: #e9f5f4;
+    border-width: 1px;
     border-style:solid;
-    border-color: rgb(37, 37, 44);
+    border-color: #195a5a;
+    color: #195a5a;
+    padding: 20px 25px 20px 28px;
+    margin: 0 0 30px 0 ;
+}
+.fas{
+    padding: 0 20px 0  0 ;
+   font-size: 30px;
+}
+.remindtitle{
+    font-size: 15px;
 }
 
 .books{
     border-bottom: solid;
-    border-width: 2px;
-    border-color: rgb(18, 156, 110);
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
 
     display: flex;
 }
@@ -68,7 +70,6 @@ body{
     padding: 0 0 21px;
 }
 .intput-detailtop{
-    
     margin: 0 0 14px;
     font-size: 14px;
 }
@@ -81,6 +82,11 @@ body{
     width: 100%;
     margin: 0 0 21px;
     padding: 0 0 17px;
+}
+.primary-link{
+    border: none;
+    background-color: white;
+    text-decoration:underline;
 }
 .enter-card{
     background-color: white;
@@ -152,4 +158,64 @@ li{
     padding: 7px 80px ;
     color: white;
     border: none;
+}
+
+.remove{
+    border: none;
+    background-color: white;
+    text-decoration:underline;
+}
+.usepoint{
+    border: none;
+    background-color: white;
+    text-decoration:underline;
+}
+.price-totals{
+    background-color: white;
+}
+.books{
+  padding: 20px 25px;  
+}
+.book-title{
+    font-size: 16px;
+    font-weight: 700;
+   padding-left: 30px; 
+}
+.writer{
+    padding:9px 0 15px 0 ; 
+    font-size: 10px;
+    font-weight: 0;
+    color: gray;
+}
+.remove{
+    font-size: 13px;
+}
+.book-price{
+    font-size: 25px;
+    font-weight: 700;
+}
+.allprice{
+    font-size: 20px;
+    font-weight: 700;
+    padding:15px ;
+}
+.points{
+    padding:15px ;
+}
+.pointtitle{
+    font-size: 20px;
+    padding: 0 0 17px;
+}
+.point{
+padding: 0 0 10px;
+}
+.upoint{
+padding: 0 0 10px;
+}
+.usepoint{
+    padding: 0 0 10px;
+}
+.getpoint{
+    padding:15px 0 ;
+    color: red;
 }

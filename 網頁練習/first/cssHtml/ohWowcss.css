@@ -9,7 +9,7 @@
     background-color: crimson;
 }
 .payment_order{
-    height: 100px;
+    
     background-color: darkcyan;
 }
 .month-year{
@@ -26,3 +26,37 @@
     display: flex;
     
 }
+.cardnumbersf{
+   width: 70%;
+}
+.cardnumberss{
+    width: 30%;
+}
+.remind{
+    display: flex;
+    background-color: cornflowerblue;
+    border-width: 2px;
+    border-style:solid;
+    border-color: rgb(37, 37, 44);
+}
+
+.books{
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: rgb(37, 37, 44);
+
+    display: flex;
+}
+.book{
+    width: 12%;
+}
+.books img{
+    width: 100%;
+}
+.book-title{
+    width: 88%;
+}
+.allprice{
+    display: flex;
+}
+

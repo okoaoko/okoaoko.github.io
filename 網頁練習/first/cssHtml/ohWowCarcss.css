@@ -1,0 +1,111 @@
+/* Style buttons */
+.btn {
+    background-color: rgb(0, 0, 0); /* Blue background */
+    border-radius:100%;
+    border-width: 3px;
+    color: white; /* White text */
+    padding: 9px 11px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin: 10px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .cart-order-area{
+    padding: 0 30px 0 30px;
+      background-color: rgb(255, 255, 255);
+      height: 600px;
+  }
+  body{
+    background-color: rgb(238, 238, 238);
+  }
+  h2{
+    font-weight: 700;
+    font-size: 16px;
+    padding:36px 0 ;
+  }
+  
+  .book img{
+    width: 100%;
+    
+  }
+  .innerli{
+    width: 110px;
+  }
+  .books{
+    padding:  0 20px 20px 0;
+    margin: auto;
+    text-align: center;
+  }
+ ul{
+    flex-wrap: wrap;
+    display:flex;
+  }
+  .money{
+     font-weight: 900;
+    font-size: 11px;
+  }
+  .innercar{
+    padding: 15px;
+  }
+  .item-image img{
+    width: 60px;
+  }
+ .innercar{
+  display: flex;
+  border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
+ 
+ }
+ .cart-item-metadata{
+   display: flex;
+   
+ }
+ .name{
+   padding:0 0 5px 10px ;
+   font-weight: 600;
+    font-size: 16px;
+    text-decoration:underline;
+ }
+ .price{
+  font-weight: 600;
+  font-size: 18px;
+ }
+ h4{
+  padding:0 0 15px 10px ;
+  font-size: 12px;
+  color: rgb(139, 139, 139);
+ }
+ .removebtn{
+    border: none;
+    background-color: white;
+    text-decoration:underline;
+    padding:26px 0 15px 10px ;
+    font-size: 14px;
+ }
+ .cart-actions{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0;
+ }
+ 
+ .continuebuy{
+   border: none;
+ background-color: white;
+ text-decoration:underline;
+ }
+ .Checkout{
+  border: none;
+  background-color: #bf0000;
+    color: #fff;
+    font-weight: 600;
+    padding:8px 90px ;
+ }

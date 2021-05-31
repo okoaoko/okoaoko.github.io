@@ -52,6 +52,7 @@
  ul{
     flex-wrap: wrap;
     display:flex;
+    text-align: center;
   }
   .money{
      font-weight: 900;
@@ -112,11 +113,9 @@
     color: #fff;
     font-weight: 600;
     padding:8px 90px ;
+    display: inline-block;
  }
-.cart-price-summary{
-  justify-content: center;
-  display: flex;
-}
+
 .cart-item-content{
   width: 100%;
 }
@@ -125,15 +124,23 @@
   width: 100%;
   justify-content: space-between;
 }
-.line-item-label{
-  position: absolute;
+
+.cart-price-summary{
+  justify-content: flex-end;
+  display: flex;
+  
 }
-.line-item-amount{
-  position: relative;
-  left: 212px;
+.line-item-label{
+  
+  display: flex;
+}
+p{
+  left: 50%;
+  right: 50%;
+  position: absolute;
+  
+}
+.pppp{
   font-weight: 600;
   font-size: 18px;
-}
-.line-item-label{
-  text-align: center;
 }

@@ -92,7 +92,7 @@
     border: none;
     background-color: white;
     text-decoration:underline;
-    padding:26px 0 15px 10px ;
+    padding:35px 0 15px 10px ;
     font-size: 14px;
  }
  .cart-actions{
@@ -114,9 +114,26 @@
     padding:8px 90px ;
  }
 .cart-price-summary{
-  text-align: center;
+  justify-content: center;
   display: flex;
 }
 .cart-item-content{
   width: 100%;
+}
+.cart-item-metadata{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.line-item-label{
+  position: absolute;
+}
+.line-item-amount{
+  position: relative;
+  left: 212px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.line-item-label{
+  text-align: center;
 }
